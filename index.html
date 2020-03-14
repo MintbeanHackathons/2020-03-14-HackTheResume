@@ -28,11 +28,19 @@
           </p>
         </div>
         <div class="experience">
-            
-          </div>
+            {{#each experience}}
+            {{position}}
+            {{date}}
+            <ul>
+                {{#each achievements}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+{{/each}}
+        </div>
       </div>
     </script>
-    
+
     <div id="content-placeholder"></div>
 
     <script src="assets/data.js"></script>
