@@ -49,6 +49,28 @@ var resume = {
         "Agile team with daily Stand-up and weekly sprints. ",
         "Reported and handled tasks utilizing JIRA."
       ]
+    },
+    {
+      "name": "E-Data Now!",
+      "location": "Oshawa, Ontario",
+      "description": "Simple Mobile Software with powerful tools to manage Quality Production & Manufacturing Processes. Inspect, Audit, Correct, Schedule, Report. All in one visual space",
+      "position": "Software Developer",
+      "url": "https://www.edatanow.com/",
+      "startDate": "2018-05-20",
+      "endDate": "2019-09-20",
+      "summary": "1 of 6 Software Developer's in this small shop. Everyone wore many hats (Frontend, Backend, Tester, Mobile, etc...)",
+      "highlights": [
+        "Assisted with the modification and verification process with conversion of the Ruby on Rails full stack to an API. While integrating a NuxtJS/VueJS frontend.",
+        "Supported, developed and improved the two supporting mobile applications.",
+        "Main app was used for inspection and auditing using Swift",
+        "Secondary app was a real time timesheets app in Flutter.",
+        "Utilized Scout and Sentry in order to identify and improve the Frontend and Backend API. ",
+        "Upgraded and repaired legacy PowerShell scripts for processing S3 Bucket with SQL Server Database integration.",
+        "Conducted video conferences to verify client’s satisfaction.",
+        "Refactored and improved analytics dashboard UX experience by adding rearrangeable / drag and drop capabilities.",
+        "Agile team with daily Stand-up and weekly sprints. ",
+        "Reported and handled tasks utilizing JIRA."
+      ]
     }
   ],
   "volunteer": [
