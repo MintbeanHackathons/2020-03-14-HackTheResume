@@ -1,1 +1,41 @@
-<div>Hello World!</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World!</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+
+  <div id="resume">
+    <div id="name"></div>
+    <div id="email"></div>
+    <div id="phone"></div>
+    <div id="experience"></div>
+  </div>
+
+  <script>
+    const resume = {
+      name: "Monarch Wadia",
+      email: "my@email.com",
+      phone: "123-456-7890",
+      experience: [
+        { company: "Acme Inc", dates: "2010-01-01 to 2020-01-01"}
+      ]
+    }
+
+    document.getElementById("name").innerText = resume.name;
+    document.getElementById("email").innerText = resume.email;
+    document.getElementById("phone").innerText = resume.phone;
+    resume
+      .experience
+      .map(({company, dates}) => {
+        const div = document.createElement('div');
+        div.innerText = `${company}. Dates: ${dates}`
+        return div;
+      })
+      .forEach(element => document.getElementById("experience").append(element))
+  </script>
+</body>
+</html>
