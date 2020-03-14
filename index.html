@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayla Noronha | Resume</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"
+    />
+    <!-- <link rel="stylesheet" href="dist/paper.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <style>@page { size: A4 }</style>
+  </head>
+  <body>
+    <script id="entry-template" type="text/x-handlebars-template">
+            <div class="header">
+              <h1>{{header.name}}</h1>
+              <h2>{{header.title}}</h2>
+               <h3>Email: {{header.email}} ||  Mobile: {{header.mobile}}</h3>
+               <h4><a href={{header.git.link}} target="_blank">{{header.git.title}}</a> | {{header.location}}</h4>
+              </div>
+            </div>
+            </div>
+              <div class="summary">
+                <p>
+                  {{summary}}
+                </p>
+              </div>
+              <div class="experience">
+                  {{#each experience}}
+                  <h5>{{position}}</h5>
+                  <h6>{{date}}</h6>
+                  <ul>
+                      {{#each achievements}}
+                      <li>{{this}}</li>
+                      {{/each}}
+                  </ul>
+      {{/each}}
+              </div>
+            </div>
+    </script>
+    <body class="A4">
+      <div id="content-placeholder"></div>
+    </body>
+
+    <script src="assets/data.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
