@@ -78,5 +78,78 @@ iframe {
 	border: solid 1px;
 	margin: 10px;
 }
+.employment-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.employment-inner-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 20px;
+}
+p{
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+.company{
+    color:#3377CC;
+    font-size: 24px;
+}
+.period{
+    color:#5E9516;
+    font-size: 18px;
+    font-weight: 700;    
+}
+.location{
+    font-size: 16px;
+    font-weight: 700;    
+    color:#505576;
+}
+.detail{
+    color:#50555c;
+}
+.detail .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+.detail ul {
+    padding: 5px;
+}
+.detail ul li {
+    list-style: none;
+    line-height: 1.2;
+}
+.employment-left {
+    flex-basis: 300px;
+}
+.employment-left img {
+    width: 100%;
+}
+.employment-right {
+    flex: 1;
+    flex-basis: 500px;
+    padding-left: 20px;
+}
+.line {
+    text-align: center;
+}
+img {
+    border-radius: 35px;
+}
+@media all and (max-width: 599px) {
+    .employment-container{
+        display: block;
+        margin: 0 20px;
+    }
+    .employment-inner-box{
+        display: block;
+    }
+}
 @media all {
 }
