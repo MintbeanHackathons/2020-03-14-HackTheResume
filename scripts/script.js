@@ -1,8 +1,8 @@
 var context = {
   header: {
-    name: "Kayla",
+    name: "KAYLA NORONHA",
     title: "Full Stack Developer",
-    email: "knoronha@",
+    email: "knoronha@gmail.com",
     mobile: "226",
     location: "Toronto,ON",
     git: {
@@ -11,8 +11,7 @@ var context = {
     }
   },
   summary:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-,
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
   experience: [
     {
       position: "Developer",
@@ -31,8 +30,7 @@ var context = {
       ]
     }
   ]
-  };
-
+};
 
 //Compliles the template
 var source = document.getElementById("entry-template").innerHTML;

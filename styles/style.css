@@ -1,11 +1,8 @@
-h1 {
-    color: red;
-}
-h2{
-    color: blueviolet;
-}
 .header {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+#content-placeholder {
+    margin:5% 10%;
 }
