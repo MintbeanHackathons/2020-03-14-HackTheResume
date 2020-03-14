@@ -15,17 +15,19 @@
   <div id="target">Loading...</div>
   <script id="template" type="x-tmpl-mustache">
     <div class="header">
+      {{#resume.basics}}
       <h1> {{ resume.basics.name }}</h1>
       <div>
-        <b>Email:</b> {{ resume.basics.email }}
-        <b>Mobile:</b> {{ resume.basics.phone }}
+        <b>Email:</b> {{ email }}
+        <b>Mobile:</b> {{ phone }}
       <div>
       </div>
-        <b>Website:</b> {{ resume.basics.url }}
-        {{#resume.basics.profiles}}
+        <b>Website:</b> {{ url }}
+        {{#profiles}}
         <b>{{network}}</b>: {{url}}       
-        {{/resume.basics.profiles}}
+        {{/profiles}}
       </div>
+      {{/resume.basics}}
     </div>
     <div>
       <div>
@@ -46,4 +48,5 @@
     </div>
   </script>
 </body>
+
 </html>
