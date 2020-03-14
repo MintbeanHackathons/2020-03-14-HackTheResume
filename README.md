@@ -26,8 +26,10 @@ We have a prize on the line. It's a $25 Starbucks gift card, and bragging rights
 Scoring will be based on:
 1. Code quality
 2. Feedback provided during code review
-3. Asking good questions on [r/MintbeanDevChat](https://www.reddit.com/r/MintbeanDevChat)
-4. Answering questions on [r/MintbeanDevChat](https://www.reddit.com/r/MintbeanDevChat)
+
+Bonus points for:
+1. Asking good questions on [r/MintbeanDevChat](https://www.reddit.com/r/MintbeanDevChat)
+1. Answering questions on [r/MintbeanDevChat](https://www.reddit.com/r/MintbeanDevChat)
 
 The exercise we will be presenting you will be intentionally simple so that you can focus on writing clean code in a fair amount of time, rather than rushing to make something that looks good on the screen but is a ball of wax in the repo. So, let's not make spaghetti -- we want to make lasagna, nice and layered code that's easy to reason about.
 
@@ -49,11 +51,19 @@ Saturday, March 14, 2020
 | Start | End  | Description | Active Channels |
 |-------|------|-------------| -- |
 | 12:00pm  | 1:00pm | Registration, Intro, initial Q&A | Twitch, Reddit |
-| 1:00pm  | 4:00pm | Coding (Solo, heads-down) | Github, Reddit |
-| 4:00pm  | 5:00pm | Code Review | Github, Twitch, Reddit |
+| 1:00pm  | 4:00pm | Coding (Solo, heads-down) | Twitch, Reddit, Github |
+| 4:00pm  | 5:00pm | Code Review | Twitch, Reddit, Github |
 | 5:00pm  | 5:15pm | Survey  | Twitch, Reddit |
 | 5:15pm  | 6:00pm | Final QA | Twitch, Reddit |
 | Sunday  | Sunday | Winner announced via email | Email, Reddit |
+
+## Your responsibilities as a participant
+
+1. You must be signed into Twitch at all times
+1. You MUST email us your Github handle, your Twitch handle, and (optional, for bonus points) your Reddit handle. You can send this stuff to Jenn, whose email you should already have.
+1. You must let us know, on Twitch, when you've started.
+1. You must let us know, on Twitch, when you've finished coding.
+1. You must let us know, on Twitch, when you've finished code review.
 
 # Today's Objective: Hack the Résumé
 
