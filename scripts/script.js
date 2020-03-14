@@ -1,5 +1,5 @@
 
-var context = { "title": "My New Post", "body": "This is my first post!" }
+var context = { "name": "Kayla", "title": "Full Stack Developer", "email": "knoronha@", "mobile": "226"}
 
 var source = document.getElementById("entry-template").innerHTML;
 var template = Handlebars.compile(source);
