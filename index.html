@@ -16,17 +16,20 @@
   <script id="template" type="x-tmpl-mustache">
     <div class="header">
       {{#resume.basics}}
-      <h1> {{ resume.basics.name }}</h1>
-      <div>
-        <b>Email:</b> {{ email }}
-        <b>Mobile:</b> {{ phone }}
-      <div>
-      </div>
-        <b>Website:</b> {{ url }}
-        {{#profiles}}
-        <b>{{network}}</b>: {{url}}       
-        {{/profiles}}
-      </div>
+        <h1> {{ resume.basics.name }}</h1>
+        <div>
+          <b>Email:</b> {{ email }}
+          <b>Mobile:</b> {{ phone }}
+        <div>
+        </div>
+          <b>Website:</b> {{ url }}
+          {{#profiles}}
+          <b>{{network}}</b>: {{url}}       
+          {{/profiles}}
+        </div>
+        <div class="summary">
+          {{summary}}
+        </div>
       {{/resume.basics}}
     </div>
     <div>
