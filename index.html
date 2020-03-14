@@ -27,6 +27,23 @@
         {{/resume.basics.profiles}}
       </div>
     </div>
+    <div>
+      <div>
+        <h2>Work Experiance</h2>
+        {{#resume.work}}
+          {{startDate}} - {{endDate}}
+          <h4>
+            {{position}}, {{name}}
+          </div>
+          <div>{{summary}}</div>
+          {{#highlights}}
+            <ul>
+              <li>{{.}}</li>
+            </ul>
+          {{/highlights}}
+        {{/resume.work}}
+      </div>
+    </div>
   </script>
 </body>
 </html>
