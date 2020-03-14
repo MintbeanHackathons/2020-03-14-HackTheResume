@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Tester</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="renderHello()">
+  <script src="https://unpkg.com/mustache@latest"></script>
+  <script src="render.js"></script>
+  <script src="resume.js"></script>
+
+  <div id="target">Loading...</div>
+  <script id="template" type="x-tmpl-mustache">
+    <div class="header">
+      <h1> {{ resume.basics.name }}</h1>
+      <div>
+        <b>Email:</b> {{ resume.basics.email }}
+        <b>Mobile:</b> {{ resume.basics.phone }}
+      <div>
+      </div>
+        <b>Website:</b> {{ resume.basics.url }}
+        {{#resume.basics.profiles}}
+        <b>{{network}}</b>: {{url}}       
+        {{/resume.basics.profiles}}
+      </div>
+    </div>
+  </script>
+</body>
+</html>
