@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Tester</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="renderHello()">
+  <script src="https://unpkg.com/mustache@latest"></script>
+  <script src="render.js"></script>
+  <script src="resume.js"></script>
+
+  <div id="target">Loading...</div>
+  <script id="template" type="x-tmpl-mustache">
+    <div class="header">
+      {{#resume.basics}}
+        <h1> {{ resume.basics.name }}</h1>
+        <div>
+          <b>Email:</b> {{ email }}
+          <b>Mobile:</b> {{ phone }}
+        <div>
+        </div>
+          <b>Website:</b> {{ url }}
+          {{#profiles}}
+          <b>{{network}}</b>: {{url}}       
+          {{/profiles}}
+        </div>
+        <div class="summary">
+          {{summary}}
+        </div>
+      {{/resume.basics}}
+    </div>
+    <div>
+      <div>
+        <h2>Work Experiance</h2>
+        {{#resume.work}}
+          {{startDate}} - {{endDate}}
+          <h4>
+            {{position}}, {{name}}
+          </div>
+          <div>{{summary}}</div>
+          {{#highlights}}
+            <ul>
+              <li>{{.}}</li>
+            </ul>
+          {{/highlights}}
+        {{/resume.work}}
+      </div>
+    </div>
+  </script>
+</body>
+
+</html>
