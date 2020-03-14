@@ -15,17 +15,24 @@
   <body>
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="header">
-        <h1>{{name}}</h1>
-        <h2>{{title}}</h2>
-         <h3>Email: {{email}} ||  Mobile: {{mobile}}</h3>
+        <h1>{{header.name}}</h1>
+        <h2>{{header.title}}</h2>
+         <h3>Email: {{header.email}} ||  Mobile: {{header.mobile}}</h3>
+         <h4><a href={{header.git.link}} target="_blank">{{header.git.title}}</a> | {{header.location}}</h4>
         </div>
       </div>
       </div>
-        <div class="body">
-          {{body}}
+        <div class="summary">
+          <p>
+            {{summary}}
+          </p>
         </div>
+        <div class="experience">
+            
+          </div>
       </div>
     </script>
+    
     <div id="content-placeholder"></div>
 
     <script src="assets/data.js"></script>
