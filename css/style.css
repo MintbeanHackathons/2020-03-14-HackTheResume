@@ -1,0 +1,155 @@
+/*
+Author: Raymond Huang
+Last Update:July 2017
+*/
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  min-width: 320px; }
+
+img {
+  max-width: 100%; }
+
+a {
+  cursor: pointer; }
+
+iframe {
+  max-width: 100%; }
+
+
+#contact,#summary,#skills {
+	border: solid 1px;
+	margin: 10px;
+}
+.employment-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.employment-inner-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 20px;
+}
+p{
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+.company{
+    color:#3377CC;
+    font-size: 24px;
+}
+.period{
+    color:#5E9516;
+    font-size: 18px;
+    font-weight: 700;    
+}
+.location{
+    font-size: 16px;
+    font-weight: 700;    
+    color:#505576;
+}
+.detail{
+    color:#50555c;
+}
+.detail .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+.detail ul {
+    padding: 5px;
+}
+.detail ul li {
+    list-style: none;
+    line-height: 1.2;
+}
+.employment-left {
+    flex-basis: 300px;
+}
+.employment-left img {
+    width: 100%;
+}
+.employment-right {
+    flex: 1;
+    flex-basis: 500px;
+    padding-left: 20px;
+}
+.line {
+    text-align: center;
+}
+img {
+    border-radius: 35px;
+}
+@media all and (max-width: 599px) {
+    .employment-container{
+        display: block;
+        margin: 0 20px;
+    }
+    .employment-inner-box{
+        display: block;
+    }
+}
+@media all {
+}
