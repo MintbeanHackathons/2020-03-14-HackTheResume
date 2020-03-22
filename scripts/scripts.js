@@ -12,7 +12,8 @@ app.getData = async () => {
 }
 
 // insert basic user information to HTML element for contact information
-app.displayContactData = (userData, targetProperty) => {
+app.displayContact = (userData, targetProperty) => {
+    // destructure first name, last name, email, github and location properties from userData
     const { firstName, lastName, email, github, location } = userData[targetProperty];
 
     const htmlToAppend = `
@@ -29,7 +30,7 @@ app.displayContactData = (userData, targetProperty) => {
 }
 
 // append education information to HTML element for education
-app.displayEducationData = (userData, targetProperty) => {
+app.displayEducation = (userData, targetProperty) => {
     // create a copy of education array from user object
     const education = [...userData[targetProperty]];
 
@@ -50,7 +51,8 @@ app.displayEducationData = (userData, targetProperty) => {
 }
 
 // insert HTML containing information about skills to skills HTML element
-app.displaySkillsData = (userData, targetProperty) => {
+app.displaySkills = (userData, targetProperty) => {
+    // create copy of skills data
     const skills = [...userData[targetProperty]];
 
     skills.forEach((skill, index) => {
@@ -65,19 +67,49 @@ app.displaySkillsData = (userData, targetProperty) => {
         // insert each list element into ul
         const htmlToAppend = `
             <h3>${name}</h3>
-            <ul id="skill-${index}">${skillsList}</ul>
+            <ul id="skill-${index}">${skillsList.join(' ')}</ul>
         `;
 
         document.querySelector(`#${targetProperty}`).insertAdjacentHTML("beforeend", htmlToAppend);
     })
+}
 
+// append work experience to experience section
+app.displayExperienceData = (userData, targetProperty) => {
+    // create copy of experience data
+    const experience = [...userData[targetProperty]];
+
+    experience.forEach(role => {
+        // destructure each position, company, start and end dates as well as role highlights
+        const { position, company, startDate, endDate, highlights } = role;
+
+        const htmlToAppend = `
+            <h3>${position} / ${startDate} -  ${endDate}</h3>
+            <h4>${company}</h4>
+            <ul>
+                ${ 
+                    // if highlights exist, then map over them and append to page
+                    highlights ?
+                        // iterate over highlights array
+                        highlights.map(highlight => 
+                            `<li>${highlight}</li>`).join(' ')
+                    :
+                        ``
+                }
+            </ul>
+        `;
+
+        document.querySelector(`#${targetProperty}`).insertAdjacentHTML("beforeend", htmlToAppend);
+
+    })
 }
 
 // helper method to call all display methods to show formatted user information
 app.displayAllUserData = (userData) => {
-    app.displayContactData(userData, "contact");
-    app.displayEducationData(userData, "education");
-    app.displaySkillsData(userData, "skills");
+    app.displayContact(userData, "contact");
+    app.displayEducation(userData, "education");
+    app.displaySkills(userData, "skills");
+    app.displayExperienceData(userData, "experience");
 }
 
 // initialize method to get JSON data

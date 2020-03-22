@@ -28,14 +28,16 @@
             "position": "technical mentor",
             "startDate": "January 2018",
             "endDate": "September 2018",
-            "summary": "Technical mentor at introductory HTML, CSS, and JavaScript workshops"
+            "summary": "Technical mentor at introductory HTML, CSS, and JavaScript workshops",
+            "highlights": []
         },
         {
             "company": "Lighthouse Labs",
             "position": "technical mentor",
             "startData": "February 2020",
             "endDate": "February 2020",
-            "summary": "Technical mentor at an introductory JavaScript workshop"
+            "summary": "Technical mentor at an introductory JavaScript workshop",
+            "highlights": []
         }
     ],
     "education": [
