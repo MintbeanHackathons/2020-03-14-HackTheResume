@@ -1,0 +1,93 @@
+{
+    "contact": {
+        "firstName": "Heather",
+        "lastName": "Gale",
+        "location": {
+            "city": "Toronto",
+            "country": "Canada"
+        },
+        "github": "https://github.com/heathergh",
+        "email": "user@example.com"
+    },
+    "experience": [
+        {
+            "company": "Hotel Bookings App",
+            "position": "Web Developer",
+            "startDate": "July 2017",
+            "endDate": "July 2019",
+            "summary": "Web developer for luxury hotel bookings web apps",
+            "highlights": [
+                "Created and launched marketing campaign sites",
+                "Increased engineering team’s development time by creating a streamlined process for bug reporting and feature requests",
+                "Collaborated closely with product and design teams to build new responsive features based on technical requirements and mock-ups",
+                "Decreased development life cycle by writing and refactoring code to be reusable across multiple code bases"
+            ]
+        },
+        {
+            "company": "Canada Learning Code",
+            "position": "technical mentor",
+            "startDate": "January 2018",
+            "endDate": "September 2018",
+            "summary": "Technical mentor at introductory HTML, CSS, and JavaScript workshops",
+            "highlights": []
+        },
+        {
+            "company": "Lighthouse Labs",
+            "position": "technical mentor",
+            "startData": "February 2020",
+            "endDate": "February 2020",
+            "summary": "Technical mentor at an introductory JavaScript workshop",
+            "highlights": []
+        }
+    ],
+    "education": [
+        {
+            "institutionName": "Juno College of Technology (formerly HackerYou)",
+            "area": "Front-End Web Development",
+            "accreditation": "Certificate",
+            "startDate": "October 2019",
+            "endDate": "December 2019",
+            "location": {
+                "city": "Toronto",
+                "country": "Canada"
+            }
+        },
+        {
+            "institutionName": "Lighthouse Labs",
+            "area": "Full-Stack Web Development",
+            "accreditation": "Diploma",
+            "startDate": "May 2017",
+            "endDate": "June 2017",
+            "location": {
+                "city": "Vancouver",
+                "country": "Canada"
+            }
+        }
+    ],
+    "skills": [
+        {
+            "name": "languages",
+            "keywords": [
+                "HTML5", "CSS3", "SCSS", "JavaScript", "PHP"
+            ]
+        },
+        {
+            "name": "databases and database systems",
+            "keywords": [
+                "MongoDB", "MySQL", "PostgreSQL", "SQL"
+            ]
+        },
+        {
+            "name": "frameworks and libraries",
+            "keywords": [
+                "AngularJS", "Foundation", "jQuery", "React", "SCSS", "Styled Components", "Symfony"
+            ]
+        },
+        {
+            "name": "Other skills and tools",
+            "keywords": [
+                "AWS", "Babel", "Git", "Google Analytics", "Gulp", "Jenkins", "MailChimp", "NPM", "Responsive Design", "Webpack", "Web Accessibility"
+            ]
+        }
+    ]
+}
