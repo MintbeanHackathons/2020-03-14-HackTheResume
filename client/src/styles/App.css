@@ -1,0 +1,22 @@
+/* reset the page */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.basics__image {
+  height: 50px;
+  width: 50px;
+}
+/*# sourceMappingURL=App.css.map */
