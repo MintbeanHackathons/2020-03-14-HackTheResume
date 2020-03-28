@@ -1,0 +1,22 @@
+/* reset the page */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.basics {
+  &__image {
+    height: 50px;
+    width: 50px;
+  }
+}
